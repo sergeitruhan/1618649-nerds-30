@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Сергей Трухан](https://up.htmlacademy.ru/htmlcss/30/user/1618649).
-* Наставник: `Дмитрий Вашкевич` (https://htmlacademy.ru/profile/id116959).
+* Наставник: [Дмитрий Вашкевич](https://htmlacademy.ru/profile/id116959).
 
 ---
 
