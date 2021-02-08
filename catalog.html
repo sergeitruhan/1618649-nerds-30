@@ -1,169 +1,199 @@
 <!DOCTYPE HTML>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Проект Nerds</title>
+  <link rel="stylesheet"  href="css/normolize.css">
+  <link rel="stylesheet"  href="css/style.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/icon.svg" type="image/svg+×ml">
-  <link rel="apple-touch-icon" href="img/180.png">
 </head>
-<body>
-<header>
-  <h1>Магазин готовых шаблонов</h1>
-  <nav>
-    <a href="index.html" ><img src="img/nerds-logo.svg" width="160" height="65" alt="логотип Нердс"></a>
-    <ul>
-      <li><a href="blank.html">Студия
-      </a></li>
-      <li><a href="blank.html">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="blank.html">Контакты</a></li>
-    </ul>
-    <p><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина"></p>
-    <a href="blank.html">Корзина</a>
-  </nav>
+<body class="page-body">
+<header class="main-header">
+  <div class="wrapper">
+    <nav class="main-nav">
+      <div class="main-logo-grid">
+        <a class="main-logo" href="index.html" ><img src="img/nerds-logo.svg" width="160" height="65" alt="логотип Нердс"></a>
+      </div>
+      <div class="nav-list-grid">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="blank.html">Студия
+          </a></li>
+          <li class="nav-item"><a href="blank.html">Клиенты</a></li>
+          <li class="nav-item"><a href="catalog.html">Магазин</a></li>
+          <li class="nav-item"><a href="blank.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="icon-cart"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+        <a class="item-cart" href="blank.html">Корзина</a>
+      </div>
+    </nav>
+  </div>
 </header>
-<main>
-  <section>
+<main class="main-catalog">
+  <section class="filter">
 <h2>Фильтр товаров</h2>
-    <form method="get" action="https://echo.htmlacademy.ru">
+    <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
-        <legend>СТОИМОСТЬ:</legend>
+        <legend class="filter-name">СТОИМОСТЬ:</legend>
         <p><input type="range" min="0" max="15000" value="0" id="myRange"></p>
-        <p>от 0   до 15000</p>
+        <p >от 0   до 15000</p>
       </fieldset>
       <fieldset>
-      <legend>СЕТКА:</legend>
+      <legend class="filter-name">СЕТКА:</legend>
         <ul>
-          <li> <input type="radio" name="setka" value="adaptaition" id="adaptaition" checked><label for="adaptaition">Адаптация</label>
+          <li> <input class="filter-radio" type="radio" name="setka" value="adaptaition" id="adaptaition" checked><label class="filter-info" for="adaptaition">Адаптация</label>
           </li>
-          <li><input type="radio" name="setka" value="fix" id="fix"><label for="fix">Фиксированная</label>
+          <li><input class="filter-radio" type="radio" name="setka" value="fix" id="fix"><label class="filter-info" for="fix">Фиксированная</label>
           </li>
-          <li><input type="radio" name="setka" value="rubber" id="rubber"><label for="rubber">Резиновая</label>
+          <li><input class="filter-radio" type="radio" name="setka" value="rubber" id="rubber"><label class="filter-info" for="rubber">Резиновая</label>
           </li>
         </ul>
       </fieldset>
       <fieldset>
-        <legend>ОСОБЕННОСТИ:</legend>
+        <legend class="filter-name">ОСОБЕННОСТИ:</legend>
         <ul>
-          <li><input type="checkbox" name="slider" id="filter-slider" checked >
-            <label for="filter-slider">Слайдер</label>
+          <li><input class="filter checkbox" type="checkbox" name="slider" id="filter-slider" checked >
+            <label class="filter-info" for="filter-slider">Слайдер</label>
           </li>
-          <li><input type="checkbox" name="blog" id="filter-blog" ><label for="filter-blog">Блок преимуществ</label>
+          <li><input class="filter checkbox"  type="checkbox" name="blog" id="filter-blog" ><label class="filter-info" for="filter-blog">Блок преимуществ</label>
           </li>
-          <li><input type="checkbox" name="news" id="felter-news" checked ><label for="felter-news">Новости</label>
+          <li><input class="filter checkbox"  type="checkbox" name="news" id="felter-news" checked ><label class="filter-info" for="felter-news">Новости</label>
           </li>
-          <li><input type="checkbox" name="galery" id="filter-galery"  ><label for="filter-galery">Галерея</label>
+          <li><input class="filter checkbox"  type="checkbox" name="galery" id="filter-galery"  ><label class="filter-info" for="filter-galery">Галерея</label>
           </li>
-          <li><input type="checkbox" name="bascet" id="filter-bascet"> <label for="filter-bascet">Корзина</label>
+          <li><input class="filter checkbox"  type="checkbox" name="bascet" id="filter-bascet"> <label class="filter-info" for="filter-bascet">Корзина</label>
           </li>
         </ul>
       </fieldset>
-      <button type="submit">ПОКАЗАТЬ</button>
+      <button  type="submit">ПОКАЗАТЬ</button>
        </form>
   </section>
-  <section>
+  <section class="sorting">
     <h2>Сортировка</h2>
-    <nav>
-      <h3>СОРТИРОВАТЬ:</h3>
+    <nav class="sorting-nav">
+      <h3 class="filter-name">СОРТИРОВАТЬ:</h3>
       <ul>
-        <li><a href="blank.html">ПО ЦЕНЕ</a> </li>
-        <li><a href="blank.html">ПО ТИПУ</a></li>
-        <li><a href="blank.html">ПО НАЗВАНИЮ</a></li>
-        <li><a href="blank.html"><img src="img/catalog/icon-down-dir.svg" width="11" height="10" alt="Стрелка"> </a></li>
+        <li><a class="sorting-item" href="blank.html">ПО ЦЕНЕ</a> </li>
+        <li><a class="sorting-item" href="blank.html">ПО ТИПУ</a></li>
+        <li><a class="sorting-item" href="blank.html">ПО НАЗВАНИЮ</a></li>
+        <li><a class="sorting-item-cursor" href="blank.html"><img src="img/catalog/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз"> </a></li>
+        <li><a class="sorting-item-cursor" href="blank.html"><img src="img/catalog/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх"> </a></li>
       </ul>
     </nav>
-    <div>
-      <ul>
-        <li><a href="blank.html"></a>
+    <div class="layout">
+      <ul class="layout-list">
+        <li><a href="blank.html">
         <img src="img/catalog/browser.png" width="360" height="40" alt="шапка макета"><br>
           <img src="img/catalog/img-sedona.png" width="358" height="578" alt="Проект Седона">
-          <h3>SEDONA</h3>
-          <p>Информационный сайт  для туристов</p>
-          <button type="button">9900</button>
+        </a>
+          <div class="layout-price">
+          <h3 class="filter-name">SEDONA</h3>
+           <p>Информационный сайт  для туристов</p>
+          <button class="btn btn-layout" type="button">9900</button>
+           </div>
         </li>
-        <li><a href="blank.html"></a>
+        <li><a href="blank.html">
           <img src="img/catalog/browser2.png" width="360" height="40" alt="шапка макета"><br>
           <img src="img/catalog/img-pink.png" width="358" height="578" alt="Проект Пинк">
-          <h3>PINK APP</h3>
+        </a>
+          <div class="layout-price">
+          <h3 class="filter-name">PINK APP</h3>
           <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <button type="button">9900</button>
+          <button class="btn btn-layout" type="button">9900</button>
+          </div>
         </li>
         <li>
-          <a href="blank.html"></a>
+          <a href="blank.html">
           <img src="img/catalog/browser2.png" width="360" height="40" alt="шапка макета"><br>
           <img src="img/catalog/img-barbershop.png" width="358" height="578"  alt="Проект Барбершоп">
+          </a>
+          <div class="layout-price">
           <h3>BARBERSHOP</h3>
           <p>Сайт салона красоты. Для мужчин, да.</p>
-          <button type="button">9900</button>
+          <button class="btn btn-layout" type="button">9900</button>
+          </div>
         </li>
         <li>
-          <a href="blank.html"></a>
+          <a href="blank.html">
           <img src="img/catalog/browser2.png" width="360" height="40" alt="шапка макета"><br>
           <img src="img/catalog/img-mishka.png" width="358" height="578"  alt="Проект Мишка">
+          </a>
+          <div class="layout-price">
           <h3>MISHKA</h3>
           <p>Интернет-магазин  вязаных игрушек</p>
-          <button type="button">9900</button>
+          <button class="btn btn-layout" type="button">9900</button>
+          </div>
         </li>
-        <li><a href="blank.html"></a>
+        <li><a href="blank.html">
           <img src="img/catalog/browser2.png" width="360" height="40" alt="шапка макета"><br>
           <img src="img/catalog/img-aplus.png" width="358" height="578"  alt="Проект Аплюс">
+        </a>
+          <div class="layout-price">
           <h3>A PLUS</h3>
           <p>Лендинг курсов повышения квалификации</p>
-          <button type="button">9900</button></li>
-        <li><a href="blank.html"></a>
+          <button class="btn btn-layout" type="button">9900</button>
+          </div>
+        </li>
+        <li><a href="blank.html">
           <img src="img/catalog/browser2.png" width="360" height="40" alt="шапка макета"><br>
-          <img src="img/catalog/img-kvast.png" width="358" height="578"  alt="Проект Квас">
+          <img src="img/catalog/img-kvast.png" width="358" height="578"  alt="Проект Квас"
+        </a>
+          <div class="layout-price">
           <h3>KBACT</h3>
           <p>Промо-сайт производителя  крафтового кваса</p>
-          <button type="button">9900</button></li>
+          <button class="btn btn-layout" type="button">9900</button>
+          </div>
+        </li>
       </ul>
     </div>
-    <div>
+    <div class="layout-number">
       <ul>
-        <li><a >1</a> </li>
-        <li><a href="#">2</a> </li>
-        <li><a href="#">3</a> </li>
-        <li><button type="button">СЛЕДУЮЩАЯ</button> </li>
+        <li><a class="layout-item" >1</a> </li>
+        <li><a  href="#">2</a> </li>
+        <li><a  href="#">3</a> </li>
+        <li><button class="btn btn-next" type="button">СЛЕДУЮЩАЯ</button> </li>
       </ul>
     </div>
   </section>
 </main>
-<footer>
-  <section>
+<footer class="footer">
+  <section class="contacts">
     <h3>NЁRDS DESIGN STUDIO</h3>
-    <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8  <br><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+    <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8  <br><a class="contacts-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
     <button type="submit">Напишите нам</button>
   </section>
-  <ul>
-    <li><a href="blank.html"><img src="img/vk-icon.svg " width="26" height="15" alt="мы в вконтакте"> </a></li>
-    <li><a href="blank.html"><img src="img/fb-icon.svg" width="12" height="22" alt="мы в фейсбуке"> </a></li>
-    <li><a href="blank.html"><img src="img/insta-icon.svg" width="21" height="21" alt="мы в инстаграме"> </a></li>
+  <ul class="social-list">
+    <li class="social-item"><a href="blank.html"><img src="img/vk-icon.svg" width="26" height="15" alt="мы в вконтакте"> </a>
+    </li>
+    <li class="social-item"><a href="blank.html"><img src="img/fb-icon.svg" width="12" height="22" alt="мы в фейсбуке"> </a>
+    </li>
+    <li class="social-item"><a href="blank.html"><img src="img/insta-icon.svg" width="21" height="21" alt="мы в инстаграме"> </a></li>
   </ul>
   <h3>Давайте дружить, это выгодно!</h3>
   <p>Скидка 10% для друзей из социальных сетей.</p>
+
 </footer>
-<section>
-  <h2>Напишите нам</h2>
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <label for="login-login">Ваше имя:</label>
-    <label > <input type="text" name="login" id="login-login" placeholder="Имя Фамилия"></label>
-    <label for="email">Ваш email:</label>
-    <label>
-      <input type="email" id="email" name="email" placeholder="email@example.com"></label>
-    <label for="text">Текст письма:</label>
-    <label><input type="text" id="text" name="text" placeholder="В свободной форме"></label>
-    <button type="submit">Отправить</button>
-  </form>
-  <button type="button" >закрыть</button>
+<section class="info-send">
+  <h3>Напишите нам</h3>
+  <div class="modal-form"  >
+    <form class="form-login"  action="https://echo.htmlacademy.ru" method="post">
+      <label class="user" for="fname">Ваше имя:</label>
+      <label class="username"><input class="login-user" type="text" id="fname" name="fname" placeholder="Имя Фамилия"></label>
+      <label class="user" for="send-email">Ваш email:</label>
+      <label class="email">
+        <input  type="email" id="send-email" name="send-email" placeholder="email@example.com"></label>
+      <label class="user" for="text-letter">Текст письма:</label>
+      <label class="text"><input  type="text" id="text-letter" name="text-letter" placeholder="В свободной форме"></label>
+      <button class="btn btn-send " type="submit">Отправить</button>
+    </form>
+  </div>
+  <button class="btn btn-close" type="button" >закрыть</button>
 </section>
-<section>
+<section class="location">
   <h2>Как до нас добраться</h2>
   <!--Здесь будет карта-->
-  <button type="button" >Закрыть</button>
+  <button class="btn-close" type="button" >Закрыть</button>
 </section>
-
-
 
 </body>
 </html>
