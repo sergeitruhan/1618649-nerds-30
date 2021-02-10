@@ -112,7 +112,10 @@ background-color: #E74246;
    display: grid;
    grid-template-columns: 1fr 5fr 1fr;
  }
-
+.nav-list{
+  display: flex;
+  flex-direction: row;
+}
  .nav-list-grid {
  	list-style: none;
    justify-self: center;
