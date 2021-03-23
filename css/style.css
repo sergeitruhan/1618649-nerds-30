@@ -45,8 +45,7 @@
 }
 
 .page-body {
-  min-height: 100%;
-  display: -ms-grid;
+     display: -ms-grid;
   display: grid;
   -ms-grid-rows: -webkit-min-content 1fr -webkit-min-content;
   -ms-grid-rows: min-content 1fr min-content;
@@ -65,8 +64,8 @@
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  width: 1160px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -133,6 +132,8 @@ li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-left: 0;
+  margin-left: 142px;
 }
 
 .main-slider-wrapper .container {
@@ -149,7 +150,7 @@ li {
   -ms-flex-item-align: start;
   align-self: flex-start;
   margin: 0;
-  padding: 0;
+  padding-left: 1px;
 }
 
 .nav-list {
@@ -168,7 +169,7 @@ li {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-left: 203px;
+  margin-left: 201px;
   margin-top: 13px;
 }
 
@@ -189,6 +190,9 @@ li {
   line-height: 30px;
   color: var(--basic-dark);
   text-decoration: none;
+}
+.nav-list li:last-child{
+  padding-right: 0;
 }
 
 .nav-list a:hover {
@@ -215,7 +219,7 @@ li {
   min-height: 30px;
   text-align: right;
   margin-top: 13px;
-  margin-left: 168px;
+  margin-left: 212px;
 }
 
 .item-cart {
@@ -254,6 +258,7 @@ li {
 
 .slider .container {
   position: relative;
+  margin-left: 120px;
 }
 
 .slider-list {
@@ -346,7 +351,7 @@ li {
 .slider-controls {
   position: absolute;
   top: 312px;
-  right: 591px;
+  right: 555px;
   border: none;
   z-index: 20;
   display: -webkit-box;
@@ -410,6 +415,9 @@ li {
   margin: 0;
   padding: 0;
 }
+.services .container{
+  margin-left: 90px;
+}
 
 .services-list {
   display: -webkit-box;
@@ -428,7 +436,8 @@ li {
   padding: 0;
   -ms-flex-line-pack: center;
   align-content: center;
-  margin-top: 74px;
+  margin-top: 75px;
+  padding-left: 29px;
 }
 
 .services-list img {
@@ -523,7 +532,7 @@ li {
 
 /* Advantages*/
 
-.advantages {
+.advantages .container {
   width: 1160px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,6 +541,7 @@ li {
   margin: 0;
   padding: 0;
   margin-bottom: 73px;
+  margin-left: 140px;
 }
 
 .advantages-info {
@@ -583,7 +593,7 @@ li {
 
 .advantages-info p {
   display: block;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .advantages-info strong {
@@ -642,7 +652,7 @@ li {
   text-transform: uppercase;
   text-align: left;
   padding-left: 49px;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 
 .thead {
@@ -719,15 +729,17 @@ li {
   height: 2px;
   color: var(--special);
   background-color: var(--special);
-  margin-top: 80px;
+  margin-top: 0;
+  left: 142px;
 }
 
 /*Sites*/
-.sites {
+.sites .container{
   min-height: 184px;
   width: 1160px;
   margin-bottom: 80px;
   position: relative;
+  margin-left: 100px;
 }
 
 .sites::before {
@@ -735,7 +747,8 @@ li {
   position: absolute;
   width: 1158px;
   height: 2px;
-  top: 0;
+  top: 1055px;
+  left: 140px;
   background-color: var(--special);
 }
 
@@ -744,7 +757,8 @@ li {
   position: absolute;
   width: 1158px;
   height: 2px;
-  bottom: 0;
+  bottom:  -929px;
+  left: 140px;
   background-color: var(--special);
 }
 
@@ -845,7 +859,8 @@ li {
   top: 0;
   min-height: 308px;
   background-color: var(--basic-white);
-  margin-top: 55px;
+  margin-top: 53px;
+  margin-left: 170px;
 }
 
 .contacts {
@@ -864,7 +879,7 @@ li {
   align-items: center;
   margin: 0;
   padding: 0;
-}
+ }
 
 .contacts h3 {
   display: block;
@@ -888,7 +903,7 @@ li {
   color: #666666;
   margin-bottom: 27px;
   margin-right: 17px;
-  margin-top: 4px;
+  margin-top: 7px;
 }
 
 .contacts .tel {
@@ -916,8 +931,12 @@ li {
 }
 
 /* Footer*/
-.footer {
+.footer  {
   margin-bottom: 74px;
+  padding-left: 51px;
+}
+.footer .container{
+  margin-left: 65px;
 }
 
 
@@ -928,7 +947,7 @@ li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 1060px;
+  width: 1160px;
   min-height: 81px;
   margin-top: 70px;
 }
@@ -1255,6 +1274,10 @@ li {
 }
 
 /* CATALOG*/
+
+.main-catalog .container{
+  margin-left: 140px;
+}
 .heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1264,6 +1287,7 @@ li {
   height: 234px;
   margin: 0;
   padding: 0;
+  padding-right: 37px;
 }
 
 .heading h3 {
@@ -1279,6 +1303,10 @@ li {
   width: 1160px;
 }
 
+.catalog-products .container {
+  margin-left: 120px;
+  display: flex;
+}
 /*Ползунок */
 
 .filter fieldset {
